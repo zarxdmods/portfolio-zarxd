@@ -1,0 +1,25 @@
+.cursor {
+    position: absolute;
+    width: 30px; /* Lebar cursor */
+    height: 30px; /* Tinggi cursor */
+    border-radius: 50%; /* Membuat cursor berbentuk lingkaran */
+    background-color: rgba(0, 122, 255, 0.8); /* Warna biru */
+    box-shadow: 0 0 20px rgba(0, 122, 255, 1); /* Efek cahaya biru */
+    pointer-events: none; /* Agar cursor tidak mengganggu interaksi dengan elemen lain */
+    transform: translate(-50%, -50%); /* Mengatur posisi agar cursor terletak di tengah */
+    z-index: 1;
+    transition: transform 0.1s; /* Transisi untuk gerakan halus */
+}
+
+.trail {
+    position: absolute;
+    width: 40px; /* Lebar trail */
+    height: 40px; /* Tinggi trail */
+    border-radius: 50%; /* Membuat trail berbentuk lingkaran */
+    background-color: rgba(0, 122, 255, 0.5); /* Warna biru */
+    pointer-events: none; /* Agar trail tidak mengganggu interaksi */
+    opacity: 0; /* Mulai dengan transparan */
+    transition: opacity 0.4s, transform 0.4s; /* Transisi untuk efek fade dan gerakan */
+    z-index: 21;
+    transform: translate(-50%, -50%) scale(0.5); /* Kecil saat tidak terlihat */
+}

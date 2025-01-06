@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Selamat datang di portofolio pribadi Nizar! Saya seorang yang suka ngoding dan terus belajar. Di sini kamu bisa menemukan biodata lengkap saya, proyek-proyek yang saya kerjakan, dan perjalanan saya dalam dunia teknologi. Yuk, jelajahi lebih jauh!">
+        <meta name="author" content="Khalid Desu - Portofolio Pribadi">
+        <meta name="keywords" content="portofolio pribadi, ngoding, belajar coding, proyek digital, developer, karya digital, pengalaman kerja, teknologi, khalid desu, biodata lengkap">
+        <meta name="robots" content="index, follow">
+        <meta property="og:title" content="Portofolio Pribadi Khalid">
+        <meta property="og:description" content="Saya suka ngoding dan selalu berusaha untuk terus belajar! Di portofolio ini, kamu bisa lihat biodata lengkap saya, proyek-proyek yang saya buat, serta perjalanan saya dalam dunia teknologi.">
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/147589149?v=4">
+        <meta property="og:url" content="https://api.khaliddesu.my.id">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Portofolio Pribadi Khalid">
+        <meta name="twitter:description" content="Saya suka ngoding dan terus belajar! Di portofolio ini, kamu bisa temukan biodata lengkap saya dan proyek-proyek yang saya kerjakan.">
+        <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/147589149?v=4">
+        <title>Nizar 🚴💨</title>
+        <link rel="icon" type="x-icon/png" href="https://upcdn.io/kW15cM4/raw/uploads/2025/01/02/4k5yWUfzDu-20250102_205342.jpg">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/all.min.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/simple-line-icons.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/slick.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/animate.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/thema.css" type="text/css" media="all">
+        <link href="css/bootstrap.mins.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.css" rel="stylesheet"/>
+        <script src="ajax/libs/limonte-sweetalert2/7.33.1/sweetalert2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+<body>
+  
+    <audio id="audio" src="audio.mp3" type="audio" loop=""></audio>
+ 
+     <div class="cursor"></div>       
+    <div id="preloader">
+        <div class="outer">
+            <div class="infinityChrome">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <div class="infinity">
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+                <div>
+                    <span></span>
+                </div>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="goo-outer">
+                <defs>
+                    <filter id="goo">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur"/>
+                        <feColorMatrix in="blur" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 18 -7" result="goo"/>
+                        <feBlend in="SourceGraphic" in2="goo"/>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <header class="mobile-header-1">
+        <div class="container">
+            <div class="menu-icon d-inline-flex mr-4">
+                <button>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div id="browser_info"></div>
+    <header class="mobile-header-1">
+        <script>
+            let myDays = [
+                "Minggu", 
+                "Senin", 
+                "Selasa", 
+                "Rabu", 
+                "Kamis", 
+                "Jumat", 
+                "Sabtu"
+            ];
+            let myMonth = [
+                "Januari", 
+                "Februari", 
+                "Maret", 
+                "April", 
+                "Mei", 
+                "Juni", 
+                "Juli", 
+                "Agustus", 
+                "September", 
+                "Oktober", 
+                "November", "Desember"
+            ];
+            let clock = document.querySelector("div#browser_info");
+            setInterval(() => {
+                var d = new Date();
+                const Jam = d.getHours().toString().padStart(2, 0);
+                const Menit = d.getMinutes().toString().padStart(2, 0);
+                const Detik = d.getSeconds().toString().padStart(2, 0);
+                const Day = d.getDay();
+                const Hari = myDays[Day];
+                const Tanggal = d.getDate();
+                const Month = d.getMonth();
+                const Bulan = myMonth[Month];
+                const Tahun = d.getFullYear();
+               clock.innerHTML = `<time> ${Jam}:${Menit}:${Detik} · ${Hari}, ${Tanggal} - ${Bulan} - ${Tahun} </time>`.trim(); 
+            }, 1000);
+        </script>
+    </header>
+
+    <header class="desktop-header-1 d-flex align-items-start flex-column">
+        <div class="site-logo">
+            <h1 class="mb-2 mt-0" style="color: white;">Hai!</h1>
+        </div>
+
+        <nav>
+            <ul class="vertical-menu scrollspy">
+                <li class="active">
+                    <a href="#home">
+                        <i class="icon-house-line"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        <i class="icon-user-smiley"></i>
+                        About Me
+                    </a>
+                </li>
+                <li>
+                    <a href="#services">
+                        <i class="icon-signal-full"></i>
+                        Cust. Service
+                    </a>
+                </li>
+                <li>
+                    <a href="#journey">
+                        <i class="icon-jar"></i>
+                        My Journey
+                    </a>
+                </li>
+                <li>
+                    <a href="#anime">
+                        <i class="icon-spotify-logo"></i>
+                        My Favorite Anime
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="icon-cards"></i>
+                        Contact Me
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <main class="content">
+        <section id="home" class="home d-flex align-items-center">
+            <div class="container">
+                <div class="intro">
+                    <img src="https://upcdn.io/kW15cM4/raw/uploads/2025/01/02/4k5yWUfzDu-20250102_205342.jpg" class="mb-4" style="width: auto; height: auto; border-radius: 10px;"/>
+                    <h1 class="mb-2 mt-0">Hai! 👋</h1>
+                    <span>I'm a <span class="text-rotating">Bot WhatsApp Developer, Video Editor, Website Developer</span></span>
+
+                    <ul class="social-icons light list-inline mb-0 mt-4">
+                        <li class="list-inline-item">
+                            <a href="https://tiktok.com/zarxd_tol">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/zarxdmods">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://t.me/Zarxdofficial">
+                                <i class="fab fa-telegram"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a class="btn btn-default work-website" href="https://website-alquran.my.id">Klik!!</a>
+                    </div>
+                </div>
+
+                <div class="scroll-down">
+                    <a href="#about" class="mouse-wrapper">
+                        <span class="mouse">
+                            <span class="wheel"></span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="parallax" data-relative-input="true">
+                    <svg width="27" height="29" data-depth="0.3" class="layer p1" xmlns="http://www.w3.org/2000/svg"><path d="M21.15625.60099c4.37954 3.67487 6.46544 9.40612 5.47254 15.03526-.9929 5.62915-4.91339 10.30141-10.2846 12.25672-5.37122 1.9553-11.3776.89631-15.75715-2.77856l2.05692-2.45134c3.50315 2.93948 8.3087 3.78663 12.60572 2.22284 4.297-1.5638 7.43381-5.30209 8.22768-9.80537.79387-4.50328-.8749-9.08872-4.37803-12.02821L21.15625.60099z" fill="#FFD15C" fill-rule="evenodd"/></svg>
+                    <svg width="26" height="26" data-depth="0.2" class="layer p2" xmlns="http://www.w3.org/2000/svg"><path d="M13 3.3541L2.42705 24.5h21.1459L13 3.3541z" stroke="#FF4C60" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    <svg width="30" height="25" data-depth="0.3" class="layer p3" xmlns="http://www.w3.org/2000/svg"><path d="M.1436 8.9282C3.00213 3.97706 8.2841.92763 14.00013.92796c5.71605.00032 10.9981 3.04992 13.85641 8 2.8583 4.95007 2.8584 11.0491-.00014 16.00024l-2.77128-1.6c2.28651-3.96036 2.28631-8.84002.00011-12.8002-2.2862-3.96017-6.5124-6.40017-11.08513-6.4-4.57271.00018-8.79872 2.43984-11.08524 6.4002l-2.77128-1.6z" fill="#44D7B6" fill-rule="evenodd"/></svg>
+                    <svg width="15" height="23" data-depth="0.6" class="layer p4" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#FFD15C" fill-rule="evenodd"/></svg>
+                    <svg width="15" height="23" data-depth="0.2" class="layer p5" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(30 9.86603 10.13397)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
+                    <svg width="49" height="17" data-depth="0.5" class="layer p6" xmlns="http://www.w3.org/2000/svg"><g fill="#FF4C60" fill-rule="evenodd"><path d="M.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C23.1175 5.50106 25.5 10.78292 25.5 16.5H23c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0C4.90625 7.70116 3 11.92697 3 16.5H.5z"/><path d="M23.5 16.5c0-5.71709 2.3825-10.99895 6.25-13.8567 3.8675-2.85774 8.6325-2.85774 12.5 0C46.1175 5.50106 48.5 10.78292 48.5 16.5H46c0-4.57303-1.90625-8.79884-5-11.08535-3.09375-2.28652-6.90625-2.28652-10 0-3.09375 2.28651-5 6.51232-5 11.08535h-2.5z"/></g></svg>
+                    <svg width="26" height="26" data-depth="0.4" class="layer p7" xmlns="http://www.w3.org/2000/svg"><path d="M13 22.6459L2.42705 1.5h21.1459L13 22.6459z" stroke="#FFD15C" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+                    <svg width="19" height="21" data-depth="0.3" class="layer p8" xmlns="http://www.w3.org/2000/svg"><rect transform="rotate(-40 6.25252 10.12626)" x="7" width="3" height="25" rx="1.5" fill="#6C6CE5" fill-rule="evenodd"/></svg>
+                    <svg width="30" height="25" data-depth="0.3" data-depth-y="-1.30" class="layer p9" xmlns="http://www.w3.org/2000/svg"><path d="M29.8564 16.0718c-2.85854 4.95114-8.1405 8.00057-13.85654 8.00024-5.71605-.00032-10.9981-3.04992-13.85641-8-2.8583-4.95007-2.8584-11.0491.00014-16.00024l2.77128 1.6c-2.28651 3.96036-2.28631 8.84002-.00011 12.8002 2.2862 3.96017 6.5124 6.40017 11.08513 6.4 4.57271-.00018 8.79872-2.43984 11.08524-6.4002l2.77128 1.6z" fill="#6C6CE5" fill-rule="evenodd"/></svg>
+                    <svg width="47" height="29" data-depth="0.2" class="layer p10" xmlns="http://www.w3.org/2000/svg"><g fill="#44D7B6" fill-rule="evenodd"><path d="M46.78878 17.19094c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36265-9.0893-.26708-11.74616-4.27524-2.65686-4.00817-3.08917-9.78636-1.13381-15.15866l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12693 2.12514 3.20674 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40949 8.48988-8.70673l2.34923.85505z"/><path d="M25.17585 9.32448c-1.95535 5.3723-6.00068 9.52077-10.61234 10.8834-4.61167 1.36264-9.0893-.26708-11.74616-4.27525C.16049 11.92447-.27182 6.14628 1.68354.77398l2.34923.85505c-1.56407 4.29724-1.2181 8.92018.90705 12.12692 2.12514 3.20675 5.70772 4.5107 9.39692 3.4202 3.68921-1.0905 6.92581-4.40948 8.48988-8.70672l2.34923.85505z"/></g></svg>
+                    <svg width="33" height="20" data-depth="0.5" class="layer p11" xmlns="http://www.w3.org/2000/svg"><path d="M32.36774.34317c.99276 5.63023-1.09332 11.3614-5.47227 15.03536-4.37895 3.67396-10.3855 4.73307-15.75693 2.77837C5.76711 16.2022 1.84665 11.53014.8539 5.8999l3.15139-.55567c.7941 4.50356 3.93083 8.24147 8.22772 9.8056 4.29688 1.56413 9.10275.71673 12.60554-2.2227C28.34133 9.98771 30.01045 5.4024 29.21635.89884l3.15139-.55567z" fill="#FFD15C" fill-rule="evenodd"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">About Me</h2>
+                <div class="spacer" data-height="60"></div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="text-center text-md-left">
+                            <img src="images/about.png" style="border-radius: 15px; box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);" alt="K."/>
+                        </div>
+                    <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                </div>
+
+                <div class="col-md-9 triangle-left-md triangle-top-sm">
+                    <div class="rounded bg-white shadow-dark padding-30">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>
+                                    Halo, nama saya <b>Nizar</b>, saya berasal dari <b>Sumatera utara, kabupaten deli serdang.</b>
+                                    <br/>
+                                    <br/>
+                                    Saya <b>bukan</b> seseorang yang hebat di bidang <b>programming</b>, saya hanya orang biasa yang hobi dalam membuat dan mengembangkan sebuah <b>website</b>. 😊🙏
+                                </p>
+                                <div class="spacer d-md-none d-lg-none" data-height="20"></div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">Javascript</h4>
+                                        <span class="float-right">90%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" data-color="#FFD15C"></div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">HTML</h4>
+                                        <span class="float-right">60%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" data-color="#FF4C60"></div>
+                                    </div>
+                                    <div class="spacer" data-height="20"></div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info clearfix">
+                                        <h4 class="float-left mb-3 mt-0">CSS</h4>
+                                        <span class="float-right">30%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar data-background" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="30" data-color="#6C6CE5"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="spacer" data-height="70"></div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+
+                    <div class="fact-item">
+                        <span class="icon icon-emotsmile"></span>
+                        <div class="details">
+                            <h3 class="mb-0 mt-0 number"><em class="count" id="jumlah-user">1000</em></h3>
+                            <p class="mb-0">Satisfied Clients</p>
+                        </div>
+                    </div>
+                    <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="fact-item">
+                        <span class="icon icon-user"></span>
+                        <div class="details">
+                            <h3 class="mb-0 mt-0 number"><em class="count" id="jumlah-pengikut">1000</em></h3>
+                            <p class="mb-0">Followers</p>
+                        </div>
+                    </div>
+                    <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="fact-item">
+                        <span class="icon icon-wallet"></span>
+                        <div class="details">
+                            <h3 class="mb-0 mt-0 number"><em class="count" id="jumlah-money">1000</em></h3>
+                            <p class="mb-0">Money</p>
+                        </div>
+                    </div>
+                    <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="fact-item">
+                        <span class="icon icon-globe-alt"></span>
+                        <div class="details">
+                            <h3 class="mb-0 mt-0 number"><em class="count" id="jumlah-vistor">1000</em></h3>
+                            <p class="mb-0">Visitor</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        
+        <section id="services">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Layanan</h2>
+                <div class="spacer" data-height="60"></div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="service-box rounded data-background padding-30 text-center text-light shadow-blue wow fadeInUp" data-color="#6C6CE5">
+                            <img src="images/service2.svg"/>
+                            <h3 class="mb-3 mt-0">Bot WhatsApp Developer</h3>
+                            <p class="mb-0"></p>
+                        </div>
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="service-box rounded data-background padding-30 text-center shadow-yellow wow fadeInUp" data-color="#F9D74C">
+                            <img src="images/service3.svg"/>
+                                <h3 class="mb-3 mt-0">Video Editor</h3>
+                                <p class="mb-0"></p>
+                            </div>
+                            <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="service-box rounded data-background padding-30 text-center text-light shadow-pink wow fadeInUp" data-color="#F97B8B">
+                                <img src="images/service2.svg"/>
+                                <h3 class="mb-3 mt-0">Web Developer</h3>
+                                <p class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="journey">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Journey</h2>
+                <div class="spacer" data-height="60"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="timeline edu bg-white rounded shadow-dark padding-30 overflow-hidden">
+                            <div class="timeline-container wow fadeInUp">
+                                <div class="content">
+                                    <span class="time">2015 - 2021</span>
+                                    <h3 class="title">SD Negeri No.106805</h3>
+                                    <p>I'm students SD Negeri No.106805</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="content">
+                                    <span class="time">2021 - 2024</span>
+                                    <h3 class="title">SMP Swasta Sinar Husni Medan</h3>
+                                    <p>I'm students SMP Swasta Sinar Husni Medan</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="content">
+                                    <span class="time">2024 - Now</span>
+                                    <h3 class="title">SMA Swasta Sinar Husni Medan</h3>
+                                    <p>I'm students SMA Swasta Sinar Husni Medan</p>
+                                </div>
+                            </div>
+
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="spacer d-md-none d-lg-none" data-height="30"></div>
+                        <div class="timeline exp bg-white rounded shadow-dark padding-30 overflow-hidden">
+                            <div class="timeline-container wow fadeInUp">
+                                <div class="content">
+                                    <span class="time">2021 - Now</span>
+                                    <h3 class="title">Bot Developer</h3>
+                                    <p>I Create and Develop a WhatsApp Bot With Baileys Library Using Nodejs Programming Language.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.2s">
+                                <div class="content">
+                                    <span class="time">2022 - Now</span>
+                                    <h3 class="title">Video Editor</h3>
+                                    <p>I Create and Edit Videos Using the Alight Motion App on Android.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-container wow fadeInUp" data-wow-delay="0.4s">
+                                <div class="content">
+                                    <span class="time">2023 - Now</span>
+                                    <h3 class="title">Web Developer</h3>
+                                    <p>I Create and Develop a Website Using HTML Programming Language.</p>
+                                </div>
+                            </div>
+
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp text-center">My Favorite Game</h2>
+                <div class="spacer" data-height="60"></div>
+                <ul class="portfolio-filter list-inline wow fadeInUp">
+                    <li class="current list-inline-item" data-filter="*">All</li>
+                    <li class="list-inline-item" data-filter=".item-1">Game adventuredrivers</li>
+                    <li class="list-inline-item" data-filter=".item-2">Game Dino</li>
+                    <li class="list-inline-item" data-filter=".item-3">Game ovo</li>
+                    <li class="list-inline-item" data-filter=".item-4">Game snake</li>
+                    <li class="list-inline-item" data-filter=".item-4">Game tic tac</li>
+                </ul>
+
+                <div class="pf-filter-wrapper">
+                    <select class="portfolio-filter-mobile">
+                        <option value="*">All</option>
+                        <option value=".item-1">Game adventuredrivers</option>
+                        <option value=".item-2">Game Dino</option>
+                        <option value=".item-3">Game ovo</option>
+                        <option value=".item-4">Game snake</option>
+                        <option value=".item-4">Game tic tac</option>
+                    </select>
+                </div>
+
+                <div class="row portfolio-wrapper">
+                    <div class="col-md-4 col-sm-6 grid-item item-1">
+                        <a href="/adventuredrivers/index.html">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Game adventuredrivers</span>
+                                    <h4 class="title">Game adventuredrivers Adalah game mobilan balap yang mempunyai misi misi memgejar target yaitu level.</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/project1.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 grid-item item-2">
+                        <a href="/chromedino/index.html">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Game Dino</span>
+                                    <h4 class="title">Game Dino adalah game Offiline dari crhome,game ini sangat seru di mainkan di offline tetapi di website saya hanya bisa online🗿😂</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/project2.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 grid-item item-3">
+                        <a href="/ovo/index.html">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">game ovo</span>
+                                    <h4 class="title">Game ovo adalah game porkour🗿</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/project3.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                                        <div class="col-md-4 col-sm-6 grid-item item-3">
+                        <a href="/snake/index.html">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">game snake</span>
+                                    <h4 class="title">Game snake adalah game ular dari jaman dulu🗿</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/project4.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                                                            <div class="col-md-4 col-sm-6 grid-item item-3">
+                        <a href="tc.html">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">game tictac</span>
+                                    <h4 class="title">Game snake adalah game tictac hahahah</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/project5.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="anime">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp text-center">My Favorite Anime</h2>
+                <div class="spacer" data-height="60"></div>
+                <ul class="portfolio-filter list-inline wow fadeInUp">
+                    <li class="current list-inline-item" data-filter="*">All</li>
+                    <li class="list-inline-item" data-filter=".item-1">Doraemon</li>
+                    <li class="list-inline-item" data-filter=".item-2">Naruto shipuden</li>
+                    <li class="list-inline-item" data-filter=".item-3">digimon Adventure</li>
+                </ul>
+
+                <div class="pf-filter-wrapper">
+                    <select class="portfolio-filter-mobile">
+                        <option value="*">All</option>
+                        <option value=".item-1">Doraemon</option>
+                        <option value=".item-2">Naruto shipuden</option>
+                        <option value=".item-3">digimon Adventure</option>
+                    </select>
+                </div>
+
+                <div class="row portfolio-wrapper">
+                    <div class="col-md-4 col-sm-6 grid-item item-1">
+                        <a href="https://myanimelist.net/anime/2471/Doraemon_1979">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Doraemon</span>
+                                    <h4 class="title">Nobita Nobi adalah siswa kelas empat biasa. Namun semuanya berubah ketika robot kucing berwarna biru muncul dari laci mejanya. Menyebut dirinya Doraemon, robot ini menceritakan kepada Nobita bahwa calon keturunannya dari abad ke-22 hidup dalam kemiskinan karena segala kesalahan yang dilakukannya. Oleh karena itu, mereka mengirimkan Doraemon untuk menjadi pembimbing dan mentor bagi Nobita, agar masa depan mereka bisa berubah menjadi lebih baik. Apa yang dipelajari Doraemon adalah bahwa Nobita adalah siswa terlemah dan paling malas di seluruh sekolah. Untuk membantu pencariannya, Doraemon memiliki saku empat dimensi, di mana ia menyimpan berbagai mesin dan gadget dari masa depan. Sayangnya, hal ini seringkali menimbulkan lebih banyak masalah bagi Nobita. Akankah Doraemon benar-benar mampu mencapai misinya untuk mengubah Nobita, ataukah ia akan tetap seperti sekarang?</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/anime1.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 grid-item item-2">
+                        <a href="https://myanimelist.net/anime/1735/Naruto__Shippuuden">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">Naruto shipuden</span>
+                                    <h4 class="title">Sudah dua setengah tahun sejak Naruto Uzumaki meninggalkan Konohagakure, Desa Daun Tersembunyi, untuk pelatihan intensif menyusul kejadian yang memicu keinginannya untuk menjadi lebih kuat. Kini Akatsuki, organisasi misterius ninja elit nakal, mendekati rencana besar mereka yang mungkin mengancam keselamatan seluruh dunia shinobi. Meskipun Naruto lebih tua dan peristiwa mengerikan akan segera terjadi, kepribadiannya tidak banyak berubah—masih cerewet dan kekanak-kanakan—meskipun dia sekarang jauh lebih percaya diri dan memiliki tekad yang lebih besar untuk melindungi teman-teman dan rumahnya. Apapun yang terjadi, Naruto akan terus berjuang demi apa yang penting baginya, bahkan dengan mengorbankan tubuhnya sendiri, dalam kelanjutan kisah tentang anak laki-laki yang ingin menjadi Hokage.</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/anime2.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 grid-item item-3">
+                        <a href="https://myanimelist.net/anime/552/Digimon_Adventure?q=digimon%20ad&cat=anime">
+                            <div class="portfolio-item rounded shadow-dark">
+                                <div class="details">
+                                    <span class="term">digimon Adventure</span>
+                                    <h4 class="title">Saat sekelompok tujuh anak pergi ke perkemahan musim panas, hal terakhir yang mereka harapkan adalah salju turun di bulan Juli. Dalam kebingungan yang terjadi setelah fenomena ini, mereka masing-masing menerima perangkat aneh yang membawa mereka ke dunia lain. Begitu mereka terbangun di dunia baru ini, mereka bertemu dengan makhluk aneh yang menyebut diri mereka "Digimon". Digimon memberitahu mereka bahwa mereka telah mendarat di "Dunia Digital", jauh dari rumah. Dengan hanya Digimon dan "Digivices" sebagai perlindungan, ketujuh anak berangkat mencari jalan pulang dan mengetahui alasan mengapa mereka dibawa ke sini. Dipimpin oleh Taichi Yagami yang impulsif dan rekan Digimonnya yang lapar, Agumon, kelompok ini harus melawan kejahatan yang tidak diketahui saat mereka menemukan lebih banyak tentang Dunia Digital yang aneh ini.</h4>
+                                    <span class="more-button"><i class="icon-link-simple"></i></span>
+                                </div>
+                                <div class="thumb">
+                                    <img src="images/anime3.png"/>
+                                    <div class="mask"></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title wow fadeInUp">Contact Me</h2>
+                <div class="spacer" data-height="20"></div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="contact-info">
+                            <h4 class="wow fadeInUp">Want to ask something?<br/>
+                            please click the button below.</h4>
+                            <br/>
+                            <p class="wow fadeInUp">
+                                <a class="btn btn-default" href="contact.html">Klik aku! 👋</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-8"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="spacer" data-height="90"></div>
+
+    </main>
+
+    <a href="javascript:" id="return-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <div class="footer">
+        <h1 class="btn btn-fake">Made With ❤️ by <a href="https://api.whatsapp.com/send?phone=6283830399871">Nizar</a>.</h1>
+    </div>
+
+    <script>
+        const audio = document.querySelector("#audio");
+        setTimeout(() => {
+            Swal.fire({
+                title: "Halo kak! 👋",
+                text: "Dengan membuka website, anda menyetujui syarat dan ketentuan pada website.",
+                footer: 'Please click the "Accept" button to continue.',
+                icon: "info",
+                confirmButtonText: "Accept",
+                allowOutsideClick: false,
+            }).then(() => {
+                audio.play()
+            }).catch(() => {
+                audio.play()
+            })
+        }, 1000);
+    </script>
+    
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/infinite-scroll.min.js"></script>
+<script src="js/imagesloaded.pkgd.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/morphext.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/thema.js"></script>
+</body>
+</html>
